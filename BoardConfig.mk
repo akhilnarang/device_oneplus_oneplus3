@@ -34,9 +34,6 @@ BOARD_VENDOR := oneplus
 TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := OnePlus3,oneplus3,OnePlus3T,oneplus3t
 
-# Use Snapdragon LLVM, if available
-TARGET_USE_SDCLANG := true
-
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := msm8996
 TARGET_NO_BOOTLOADER := true
@@ -75,9 +72,6 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/oneplus/msm8996
 TARGET_KERNEL_CONFIG := lineageos_oneplus3_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-
-# QCOM hardware
-BOARD_USES_QCOM_HARDWARE := true
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-uart"
@@ -214,9 +208,6 @@ BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 
 # Sensors
 USE_SENSOR_MULTI_HAL := true
-
-# Timeservice
-BOARD_USES_QC_TIME_SERVICES := true
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
