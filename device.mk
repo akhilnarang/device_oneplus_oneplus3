@@ -353,6 +353,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vr.high_performance.xml:system/etc/permissions/android.hardware.vr.high_performance.xml
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl
+
 # WiFi HAL
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service
