@@ -423,7 +423,7 @@ vendor/lib/libmmcamera_isp_sub_module.so
 
 # Fingerprint sensor
 bin/qfp-daemon
-lib64/hw/fingerprint.msm8996.so
+lib64/hw/fingerprint.msm8996.so:lib64/hw/fingeprint.vendor.msm8996.so
 lib64/lib_fpc_tac_shared.so
 vendor/lib64/libqfp-service.so
 vendor/lib64/qfp.wakeup.so
