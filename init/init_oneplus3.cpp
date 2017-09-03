@@ -34,10 +34,10 @@
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
-#include "vendor_init.h"
+#include <android-base/properties.h>
+
 #include "property_service.h"
-#include "log.h"
-#include "util.h"
+#include "vendor_init.h"
 
 void property_override(char const prop[], char const value[])
 {
@@ -59,7 +59,6 @@ static int read_file2(const char *fname, char *data, int max_size)
 
     fd = open(fname, O_RDONLY);
     if (fd < 0) {
-        ERROR("failed to open '%s'\n", fname);
         return 0;
     }
 
@@ -120,7 +119,7 @@ void load_op3t(const char *model) {
 }
 
 void vendor_load_properties() {
-    int rf_version = stoi(property_get("ro.boot.rf_version"));
+    int rf_version = stoi(android::base::GetProperty("ro.boot.rf_version", ""));
 
     switch (rf_version) {
     case 11:
@@ -155,8 +154,6 @@ void vendor_load_properties() {
         property_set("telephony.lteOnCdmaDevice", "1");
         property_set("persist.radio.force_on_dc", "true");
         break;
-    default:
-        INFO("%s: unexcepted rf version!\n", __func__);
     }
 
     init_alarm_boot_properties();
