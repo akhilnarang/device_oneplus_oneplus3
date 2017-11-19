@@ -372,6 +372,7 @@ framework/embmslibrary.jar
 -framework/qcnvitems.jar
 -framework/qcrilhook.jar
 framework/qti-telephony-common.jar
+-framework/telephony-ext.jar
 framework/QtiTelephonyServicelibrary.jar
 framework/uimlpalibrary.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
