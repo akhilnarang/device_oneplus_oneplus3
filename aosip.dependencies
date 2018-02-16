@@ -11,5 +11,10 @@
     "repository" : "TheMuppets/proprietary_vendor_oneplus",
     "target_path": "vendor/oneplus",
     "branch"     : "lineage-15.1"
+  },
+  {
+   "remote"   : "aosip",
+   "repository": "platform_packages_apps_SnapdragonCamera",
+   "target_path": "packages/apps/SnapdragonCamera"
   }
 ]
