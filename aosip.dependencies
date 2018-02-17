@@ -8,9 +8,8 @@
     "target_path": "kernel/oneplus/msm8996"
   },
   {
-    "repository" : "TheMuppets/proprietary_vendor_oneplus",
-    "target_path": "vendor/oneplus",
-    "branch"     : "lineage-15.1"
+    "repository" : "vendor_oneplus",
+    "target_path": "vendor/oneplus"
   },
   {
    "remote"   : "aosip",
