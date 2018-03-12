@@ -47,4 +47,8 @@
     <!-- Whether device has dash charging support -->
     <bool name="config_hasDashCharger">true</bool>
 
+    <!-- Stop listening to the fingerprint reader when NON-WAKEUP proximity sensor is covered & screen is off.
+         config_proximityCheckOnWake must be true. -->
+    <bool name="config_proximityCheckOnFingerprintWake">true</bool>
+
 </resources>
